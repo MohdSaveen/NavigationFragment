@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/studentnav_graph"
+    app:startDestination="@id/studentPersonalDetailsFragments">
+
+    <fragment
+        android:id="@+id/studentPersonalDetailsFragments"
+        android:name="com.example.navigationfragment.StudentPersonalDetailsFragments"
+        android:label="fragment_student_personal_details_fragments"
+        tools:layout="@layout/fragment_student_personal_details_fragments" >
+        <action
+            android:id="@+id/action_studentPersonalDetailsFragments_to_studentPerformanceDetails"
+            app:destination="@id/studentPerformanceDetails" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/studentPerformanceDetails"
+        android:name="com.example.navigationfragment.StudentPerformanceDetails"
+        android:label="activity_student_performance_details_fragments"
+        tools:layout="@layout/activity_student_performance_details_fragments" />
+</navigation>
